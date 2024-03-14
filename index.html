@@ -1,0 +1,52 @@
+<html>
+    <title>Clase 01</title>
+    <body>
+
+    </body>
+    <script>
+
+        //JSON
+        const areatriangulos = [
+            {
+                "nombre": "triangulo1",
+                "base": 8,
+                "altura":4
+            },
+            {
+                "nombre": "Ctriangulo2",
+                "base": 16,
+                "altura":4
+            },
+            {
+                "nombre": "triangulo3",
+                "base": 8,
+                "altura":8
+            },
+            {
+                "nombre": "triangulo4",
+                "base": 10,
+                "altura":2
+            },
+            {
+                "nombre": "triangulo5",
+                "base": 4,
+                "altura": 2
+            },
+           
+        ];  
+        function isarea(base, altura) {
+            area=(base*altura)/2
+            
+            
+                console.log(" el area es " + area);
+            
+        }
+        /*for (let i=0; i<edades.length; i++){
+            console.log(edades[i]+1);
+        } */
+      areatriangulos.forEach((e) => {
+            // es legal
+            isarea(e.base, e.altura);            
+        });
+    </script>
+</html>
